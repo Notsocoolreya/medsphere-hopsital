@@ -1,0 +1,106 @@
+:root {
+    --primary-green: #047857 ;
+    --light-green: #4CAF50;
+    --pale-green: #E8F5E9;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--pale-green);
+}
+
+header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.specialty {
+    margin-bottom: 3rem;
+}
+
+.specialty h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--light-green);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.doctor-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-card h3 {
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.doctor-card .role {
+    color: var(--light-green);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.doctor-card p {
+    color: var(--text-light);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-green);
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .doctors {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card {
+        margin-bottom: 1rem;
+    }
+}

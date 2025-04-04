@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSphere - Medicine Directory</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>MedSphere</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m19 11-8-8-8.6 8.6a2 2 0 0 0 0 2.8l5.2 5.2c.8.8 2 .8 2.8 0L19 11Z"></path>
+                    <path d="m5 2 5 5"></path>
+                    <path d="M2 5l5 5"></path>
+                </svg>
+                <h1>Medicine Directory</h1>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All Medicines</button>
+                <button class="category-btn" data-category="fever">Fever & Pain</button>
+                <button class="category-btn" data-category="respiratory">Cold & Cough</button>
+                <button class="category-btn" data-category="digestive">Digestive Health</button>
+                <button class="category-btn" data-category="allergies">Allergies</button>
+            </div>
+
+            <!-- Medicine Categories -->
+            <div class="medicine-section" id="fever">
+                <h2 class="category-title">Fever & Pain Medicines</h2>
+                <div class="medicine-grid">
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80" alt="Paracetamol">
+                        <div class="card-content">
+                            <h3>Paracetamol</h3>
+                            <p><strong>Usage:</strong> Fever and mild to moderate pain</p>
+                            <p><strong>Dosage:</strong> 500-1000mg every 4-6 hours</p>
+                            <p><strong>Precautions:</strong> Do not exceed 4000mg in 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80" alt="Ibuprofen">
+                        <div class="card-content">
+                            <h3>Ibuprofen</h3>
+                            <p><strong>Usage:</strong> Pain and inflammation</p>
+                            <p><strong>Dosage:</strong> 200-400mg every 4-6 hours</p>
+                            <p><strong>Precautions:</strong> Take with food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medicine-section" id="respiratory">
+                <h2 class="category-title">Cold & Cough Medicines</h2>
+                <div class="medicine-grid">
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80" alt="Dextromethorphan">
+                        <div class="card-content">
+                            <h3>Dextromethorphan</h3>
+                            <p><strong>Usage:</strong> Dry cough suppression</p>
+                            <p><strong>Dosage:</strong> 10-20mg every 4 hours</p>
+                            <p><strong>Precautions:</strong> Avoid alcohol, may cause drowsiness</p>
+                        </div>
+                    </div>
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80" alt="Ambroxol">
+                        <div class="card-content">
+                            <h3>Ambroxol</h3>
+                            <p><strong>Usage:</strong> Productive cough</p>
+                            <p><strong>Dosage:</strong> 30mg three times daily</p>
+                            <p><strong>Precautions:</strong> Take with meals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medicine-section" id="digestive">
+                <h2 class="category-title">Digestive Health Medicines</h2>
+                <div class="medicine-grid">
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=800&q=80" alt="Omeprazole">
+                        <div class="card-content">
+                            <h3>Omeprazole</h3>
+                            <p><strong>Usage:</strong> Acid reflux and indigestion</p>
+                            <p><strong>Dosage:</strong> 20mg once daily</p>
+                            <p><strong>Precautions:</strong> Take before meals</p>
+                        </div>
+                    </div>
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=800&q=80" alt="Metronidazole">
+                        <div class="card-content">
+                            <h3>Metronidazole</h3>
+                            <p><strong>Usage:</strong> Stomach infections</p>
+                            <p><strong>Dosage:</strong> 400mg three times daily</p>
+                            <p><strong>Precautions:</strong> Complete full course as prescribed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medicine-section" id="allergies">
+                <h2 class="category-title">Allergy Medicines</h2>
+                <div class="medicine-grid">
+                    <div class="medicine-card">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80" alt="Cetirizine">
+                        <div class="card-content">
+                            <h3>Cetirizine</h3>
+                            <p><strong>Usage:</strong> Allergies and hay fever</p>
+                            <p><strong>Dosage:</strong> 10mg once daily</p>
+                            <p><strong>Precautions:</strong> May cause slight drowsiness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MedSphere</h3>
+                <p>Providing quality healthcare services with a commitment to excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Medical Center Drive</p>
+                <p>City, State 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@medsphere.com</p>
+            </div>
+        </div>
+        <!-- Back Button -->
+    <div class="container" style="text-align: center; margin-top: 20px;">
+        <a href="http://127.0.0.1:5500/new.html" class="btn" style="background-color: #08439c; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px;">← Back</a>
+    </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const medicineSections = document.querySelectorAll('.medicine-section');
+
+            function showCategory(categoryId) {
+                medicineSections.forEach(section => {
+                    if (categoryId === 'all' || section.id === categoryId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    showCategory(this.dataset.category);
+                });
+            });
+
+            // Show all medicines by default
+            showCategory('all');
+        });
+    
+    </script>
+    
+</body>
+</html>
